@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="login.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div id="login-container">
+      <form onchange="checkForm()">
+        <div>
+          <label id="username-label" for="username">Username:</label>
+          <input id="username" type="text" onchange="CheckUser()" />
+          <span class="hints"><strong>Hint: StudentIETI</strong></span>
+          <span
+            id="user-checkmark"
+            style="
+              position: absolute;
+              margin: 2px 0 0 -25px;
+              color: #6ac16a;
+              font-size: 20px;
+              opacity: 0;
+            "
+            >✔</span
+          >
+          <span
+            id="user-xmark"
+            style="position: absolute; margin: 6px 0 0 -28px; opacity: 0"
+            >❌</span
+          >
+        </div>
+
+        <div>
+          <label id="password-label" for="password">Password:</label>
+          <input id="password" type="password" onchange="CheckPassword()" />
+          <span class="hints"><strong>Hint: IA2024-2025</strong></span>
+          <span
+            id="password-checkmark"
+            style="
+              position: absolute;
+              margin: 2px 0 0 -25px;
+              color: #6ac16a;
+              font-size: 20px;
+              opacity: 0;
+            "
+            >✔</span
+          >
+          <span
+            id="password-xmark"
+            style="position: absolute; margin: 6px 0 0 -28px; opacity: 0"
+            >❌</span
+          >
+        </div>
+
+        <input type="button" id="submit" value="Login" onclick="validate()" />
+      </form>
+      <div class="wrapper" id="loader">
+        <div class="line line1">
+          <span class="circle circle-top"></span>
+          <div class="dotted">
+            <span class="dot dot-top"></span>
+            <span class="dot dot-middle-top"></span>
+            <span class="dot dot-middle-bottom"></span>
+            <span class="dot dot-bottom"></span>
+          </div>
+          <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line2">
+          <span class="circle circle-top"></span>
+          <div class="dotted">
+            <span class="dot dot-top"></span>
+            <span class="dot dot-middle-top"></span>
+            <span class="dot dot-middle-bottom"></span>
+            <span class="dot dot-bottom"></span>
+          </div>
+          <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line3">
+          <span class="circle circle-top"></span>
+          <div class="dotted">
+            <span class="dot dot-top"></span>
+            <span class="dot dot-middle-top"></span>
+            <span class="dot dot-middle-bottom"></span>
+            <span class="dot dot-bottom"></span>
+          </div>
+          <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line4">
+          <span class="circle circle-top"></span>
+          <div class="dotted">
+            <span class="dot dot-top"></span>
+            <span class="dot dot-middle-top"></span>
+            <span class="dot dot-middle-bottom"></span>
+            <span class="dot dot-bottom"></span>
+          </div>
+          <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line5">
+          <span class="circle circle-top"></span>
+          <div class="dotted">
+            <span class="dot dot-top"></span>
+            <span class="dot dot-middle-top"></span>
+            <span class="dot dot-middle-bottom"></span>
+            <span class="dot dot-bottom"></span>
+          </div>
+          <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line6">
+          <span class="circle circle-top"></span>
+          <div class="dotted">
+            <span class="dot dot-top"></span>
+            <span class="dot dot-middle-top"></span>
+            <span class="dot dot-middle-bottom"></span>
+            <span class="dot dot-bottom"></span>
+          </div>
+          <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line7">
+          <span class="circle circle-top"></span>
+          <div class="dotted">
+            <span class="dot dot-top"></span>
+            <span class="dot dot-middle-top"></span>
+            <span class="dot dot-middle-bottom"></span>
+            <span class="dot dot-bottom"></span>
+          </div>
+          <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line8">
+          <span class="circle circle-top"></span>
+          <div class="dotted">
+            <span class="dot dot-top"></span>
+            <span class="dot dot-middle-top"></span>
+            <span class="dot dot-middle-bottom"></span>
+            <span class="dot dot-bottom"></span>
+          </div>
+          <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line9">
+          <span class="circle circle-top"></span>
+          <div class="dotted">
+            <span class="dot dot-top"></span>
+            <span class="dot dot-middle-top"></span>
+            <span class="dot dot-middle-bottom"></span>
+            <span class="dot dot-bottom"></span>
+          </div>
+          <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line10">
+          <span class="circle circle-top"></span>
+          <div class="dotted">
+            <span class="dot dot-top"></span>
+            <span class="dot dot-middle-top"></span>
+            <span class="dot dot-middle-bottom"></span>
+            <span class="dot dot-bottom"></span>
+          </div>
+          <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line11">
+          <span class="circle circle-top"></span>
+          <div class="dotted">
+            <span class="dot dot-top"></span>
+            <span class="dot dot-middle-top"></span>
+            <span class="dot dot-middle-bottom"></span>
+            <span class="dot dot-bottom"></span>
+          </div>
+          <span class="circle circle-bottom"></span>
+        </div>
+      </div>
+    </div>
+    <script src="login.js"></script>
+    <footer id="footer"> Copyright &copy; 2024-2025</footer>
+
+  </body>
+</html>
